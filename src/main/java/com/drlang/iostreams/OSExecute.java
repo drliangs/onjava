@@ -13,6 +13,7 @@ public class OSExecute {
         boolean err;
         try {
             Process process = new ProcessBuilder(command.split(" ")).start();
+
             try (BufferedReader results = new BufferedReader(new InputStreamReader(process.getInputStream()));
                  BufferedReader errors = new BufferedReader(new InputStreamReader(process.getErrorStream()))) {
                 results.lines().forEach(System.out::println);
