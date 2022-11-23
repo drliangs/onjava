@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class OSExecute {
     public static void main(String[] args) {
-        command("javap -cp target/classes/com/drlang/iostreams OSExecuteDemo");
+        command("docker restart es");
     }
 
     public static void command(String command) {
