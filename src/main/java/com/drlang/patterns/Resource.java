@@ -1,4 +1,10 @@
 package com.drlang.patterns;
 
-public class Resource {
+public interface Resource<T> {
+
+    T get();
+
+
+    void set(T x);
+
 }
